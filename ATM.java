@@ -30,21 +30,21 @@ public class ATM {
             int user_input = sc.nextInt();
             switch (user_input) {
                 case 1:
-                System.out.println("Enter amount to be withdrawn: ");
+                System.out.print("Enter amount to be withdrawn: ");
                 // get the withdraw amount from user
                 withdraw = sc.nextInt();
                 // now check if the balance is greater than the request withdraw amount 
                 if (balance >= withdraw) {
                     balance = balance - withdraw;
-                    System.out.println("Please collect your money: " + withdraw + ". Your new balance is: " + balance);
+                    System.out.println("Please collect your money. Your new balance is: " + balance);
                 } else {
-                    System.out.println("Insufficient funds available");
+                    System.out.print("Insufficient funds available");
                 }
                 System.out.println("");
                 break;
 
                 case 2:
-                System.out.println("Please enter amount to be deposited: ");
+                System.out.print("Please enter amount to be deposited: ");
                 // get deposit amount
                 deposit = sc.nextInt();
                 // add deposit amount to balance 
@@ -54,7 +54,7 @@ public class ATM {
                 break;
 
                 case 3:
-                System.out.println("Balance: " + balance);
+                System.out.println("Current balance: " + balance);
                 System.out.println("");
                 break;
 
